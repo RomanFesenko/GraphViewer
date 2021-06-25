@@ -8,7 +8,7 @@
 #include <algorithm>
 
 
-#include "../BaseLibraries/GEOMETRY/transformation.h"
+#include "transformation.h"
 
 ///Выпуклый многогранник
 
