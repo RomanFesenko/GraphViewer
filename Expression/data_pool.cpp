@@ -366,6 +366,24 @@ void CDataPool::Clear()
     assert(m_constant_pool.Empty());
 }
 
+//TopolocicalSortFuncs - m_context[0] is leaf of
+//dependencies tree
+
+const std::vector<const CDataPool::function_t*>&
+CDataPool::TopolocicalSortFuncs()const
+{
+  m_context.clear();
+  m_graph.TopologicalSort();
+  for(const auto*target:m_graph.Targets())
+  {
+      if(!target) continue;// external expression
+      if(target->m_type==dependency_t::constant_id) continue;
+      assert(target->m_type==dependency_t::function_id);
+      m_context.push_back(static_cast<const function_t*>(target));
+  }
+  return m_context;
+}
+
 //create unnamed function as leaf of dependencies tree
 
 extern_expression_t
