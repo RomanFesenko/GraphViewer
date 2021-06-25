@@ -160,7 +160,7 @@ class CDataPool
     using fp_expression_t=CFunctionPool::fp_expression_t;
 
     mutable CDependencyGraph m_graph;
-    std::vector<const function_t*> m_context;
+    mutable std::vector<const function_t*> m_context;
     public:
     CConstantPool m_constant_pool;
     private:
@@ -256,6 +256,7 @@ class CDataPool
     void SetDependencyContext(const constant_t*ct);
     const CNodeData* TargetsRoot()const;
     const std::vector<const function_t*>& GetContext()const{return m_context;}
+    const std::vector<const function_t*>& TopolocicalSortFuncs()const;
     bool IsExternalContext()const;
     bool DeleteDependencyContext();
     std::optional<real_t> ParseNumber(const std::string&str)const;
