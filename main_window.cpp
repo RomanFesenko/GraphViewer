@@ -323,7 +323,6 @@ CMainWindow::CMainWindow()
   CreateToolBars();
   setMinimumHeight(400);
   setMinimumWidth(400);
-  std::cout<<"CMainWindow create\n";
 }
 
 QMenu* CMainWindow::m_CreateFileMenu()
