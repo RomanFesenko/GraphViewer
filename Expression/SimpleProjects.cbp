@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SimpleProjects" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Expression" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="Expression" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../GEOMETRY/primitives.h" />
+		<Unit filename="data_pool.cpp" />
+		<Unit filename="data_pool.h" />
+		<Unit filename="defer.h" />
+		<Unit filename="dependency_graph.cpp" />
+		<Unit filename="dependency_graph.h" />
+		<Unit filename="expression_parser.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="parse_config.h" />
+		<Unit filename="parse_error.h" />
+		<Unit filename="string_comparer.h" />
+		<Unit filename="test/test_common.h" />
+		<Unit filename="test/test_data_pool.cpp" />
+		<Unit filename="test/test_data_pool.h" />
+		<Unit filename="test/test_dependency_graph.cpp" />
+		<Unit filename="test/test_dependency_graph.h" />
+		<Unit filename="test/test_parsing.cpp" />
+		<Unit filename="test/test_parsing.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

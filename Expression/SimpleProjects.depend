@@ -1,0 +1,132 @@
+# depslib dependency file v1.0
+1623943262 source:/home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/dependency_graph.cpp
+	<assert.h>
+	"dependency_graph.h"
+	<list>
+	<iostream>
+	<utility>
+	<algorithm>
+
+1623943225 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/dependency_graph.h
+	<list>
+	<vector>
+	<memory>
+
+1617129067 source:/home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/function_pool.cpp
+	<assert.h>
+	"function_pool.h"
+
+1617118237 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/function_pool.h
+	"expression_parser.h"
+	"dependency_graph.h"
+	<memory>
+
+1623860033 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/expression_parser.h
+	<vector>
+	<map>
+	<optional>
+	<string>
+	<functional>
+	<typeinfo>
+	<iostream>
+	<algorithm>
+	<numbers>
+	<math.h>
+	<assert.h>
+	"reversed_sequence.h"
+	"parse_error.h"
+	"string_comparer.h"
+	"defer.h"
+
+1605341733 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/reversed_sequence.h
+	<utility>
+
+1617975915 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/parse_error.h
+	<string>
+	<map>
+
+1606125702 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/string_comparer.h
+	<string>
+	<algorithm>
+	<utility>
+
+1617214105 source:/home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/main.cpp
+	<iostream>
+	<assert.h>
+	"parse_config.h"
+	"test/test_dependency_graph.h"
+	"test/test_parsing.h"
+	"test/test_data_pool.h"
+	<ctime>
+
+1616662835 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/parse_config.h
+	"expression_parser.h"
+	<string>
+	"../GEOMETRY/primitives.h"
+
+1615401012 /home/roma/CppProjects/BaseLibraries/GEOMETRY/primitives.h
+	<math.h>
+	<tuple>
+	<array>
+	<algorithm>
+	<type_traits>
+	<assert.h>
+	"vecalg.h"
+	<random>
+
+1622476606 /home/roma/CppProjects/BaseLibraries/GEOMETRY/vecalg.h
+	<math.h>
+	<type_traits>
+
+1616662923 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/test/test_dependency_graph.h
+
+1616662887 source:/home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/parse_config.cpp
+	"parse_config.h"
+	"function_pool.h"
+	<array>
+	<regex>
+	<iostream>
+
+1623342473 source:/home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/test/test_dependency_graph.cpp
+	<assert.h>
+	"test_dependency_graph.h"
+	"../dependency_graph.h"
+	<iostream>
+	<memory>
+	<algorithm>
+	"../defer.h"
+
+1616697623 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/test/test_parsing.h
+
+1618479651 source:/home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/test/test_parsing.cpp
+	<assert.h>
+	"test_parsing.h"
+	"../expression_parser.h"
+	"test_common.h"
+	<algorithm>
+	<limits>
+
+1616923350 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/test/test_common.h
+	<iostream>
+
+1617294604 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/defer.h
+
+1623342384 source:/home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/data_pool.cpp
+	<assert.h>
+	"data_pool.h"
+
+1623943756 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/data_pool.h
+	"expression_parser.h"
+	"dependency_graph.h"
+	<memory>
+
+1623941827 source:/home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/test/test_data_pool.cpp
+	<assert.h>
+	"test_data_pool.h"
+	"../data_pool.h"
+	"test_common.h"
+	<algorithm>
+	<limits>
+
+1617202716 /home/roma/CppProjects/BaseLibraries/SIMPLE_EXPRESSION/test/test_data_pool.h
+
