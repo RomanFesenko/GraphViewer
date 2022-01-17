@@ -4,6 +4,18 @@ Application for building and viewing 3D and 2D graphs, with support for animatio
 Example:
 
 ```C++
+#include <iostream>
+#include <vector>
+#include <numbers>
+
+#include <GL/glew.h>
+#include <GL/gl.h>
+#include <GLFW/glfw3.h>
+
+#include "functional_mesh.h"
+#include "view_ruling.h"
+#include "scene.h"
+
 class CKleinBottle
 {
     using point_t=Eigen::Vector3f;
