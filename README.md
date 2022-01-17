@@ -95,7 +95,8 @@ int main()
 }
 ```
 Result:
-/home/roma/CppProjects/DcelMesh/klein_bottle.png![klein_bottle](https://user-images.githubusercontent.com/72913560/149735165-2d1a4d1c-e839-412c-afbb-35d9a269a233.png)
+
+![klein_bottle](https://user-images.githubusercontent.com/72913560/149735165-2d1a4d1c-e839-412c-afbb-35d9a269a233.png)
 
 
 
